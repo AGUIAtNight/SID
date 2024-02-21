@@ -132,3 +132,13 @@ class Predict:
 class Predict:
     def __init__(self,opt):
         opt.gpu_ids=[0]
+
+
+     def ISTD_test(self):
+        opt = self.opt
+        opt.mask_test = '/nfs/bigneuron/add_disk0/hieule/data/datasets/ISTD_Dataset/Mean_Teacher_SD/ISTD_crf'
+        dataset = SingleDataset('/nfs/bigneuron/add_disk0/hieule/data/datasets/ISTD_Dataset/test/test_A',opt)
+        opt.results_dir ='./ISTD_b/' 
+        self.eval_backend_output_only(dataset,opt)
+
+应该是Linux系统，改为自定路径
