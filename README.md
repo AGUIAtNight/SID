@@ -120,6 +120,15 @@ Hieu Le and Dimitris Samaras
 ```
 
 
+
+
+
+class Predict:
+    def __init__(self,opt):
+        opt.gpu_ids=[0]
+        # if 
+        opt.checkpoints_dir ='D:\\SID-main\\checkpoint_path\\' 
+
 class Predict:
     def __init__(self,opt):
         opt.gpu_ids=[0]
