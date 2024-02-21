@@ -118,3 +118,8 @@ Hieu Le and Dimitris Samaras
 	year = {2020}
 }
 ```
+
+
+class Predict:
+    def __init__(self,opt):
+        opt.gpu_ids=[0]
