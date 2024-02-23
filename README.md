@@ -142,3 +142,34 @@ class Predict:
         self.eval_backend_output_only(dataset,opt)
 
 应该是Linux系统，改为自定路径
+
+
+可以运行，输入图片为512*512，但是未见效果
+
+
+```
+SID-main
+├─ checkpoint_path
+│  └─ model_name
+      ├─ best_net_G.pth
+      ├─ best_net_I.pth
+      └─ best_net_M.pth
+├─ data
+│  └─ datasets
+│     └─ ISTD_Dataset
+│        ├─ Mean_Teacher_SD
+│        │  └─ ISTD_crf
+│        └─ test
+│           └─ test_A
+├─ data_processing
+├─ LICENSE
+└─ src
+   ├─ data
+   ├─ ISTD_b
+   ├─ models
+   ├─ options
+   ├─ script
+   └─ util
+
+```
+
