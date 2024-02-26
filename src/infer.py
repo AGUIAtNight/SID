@@ -14,8 +14,11 @@ from PIL import Image
 from util.util import sdmkdir
 class Predict:
     def __init__(self,opt):
-        opt.gpu_ids=[3]
-        opt.checkpoints_dir ='../checkpoints/'  
+        opt.gpu_ids=[0]
+        opt.model = 'SIDPAMIwinp'
+        opt.name = 'model_name'
+        opt.epoch = 'best'
+        opt.checkpoints_dir ='D:\\\\SID-main\\\\checkpoint_path\\\\'  
         opt.netG = 'RESNEXT'
         opt.fineSize = 256
         opt.loadSize = 256
